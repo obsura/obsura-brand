@@ -1,0 +1,312 @@
+{
+  "brand": "Obsura",
+  "repository": "obsura-brand",
+  "role": "canonical-brand-repository",
+  "status": "provisional",
+  "description": "Source-of-truth brand assets, reference design inputs, and asset metadata for Obsura.",
+  "statusModel": [
+    "draft",
+    "provisional",
+    "approved",
+    "deprecated"
+  ],
+  "sourceFormats": {
+    "preferredEditable": "svg",
+    "approvedRuntimeExport": "png"
+  },
+  "themeCompatibility": {
+    "dark": "Use assets designed for dark surfaces or controlled-background exports.",
+    "light": "Use assets designed for light surfaces or transparent exports with sufficient contrast."
+  },
+  "directories": {
+    "logo/svg": {
+      "purpose": "Canonical SVG logo and mark files.",
+      "status": "draft"
+    },
+    "logo/png": {
+      "purpose": "Approved PNG exports of official logos and marks.",
+      "status": "draft"
+    },
+    "icons/monochrome/black": {
+      "purpose": "Current transparent black icon exports.",
+      "status": "approved"
+    },
+    "icons/favicon": {
+      "purpose": "Reserved for curated favicon bundles if added later.",
+      "status": "draft"
+    },
+    "icons/app": {
+      "purpose": "Reserved for curated app icon packages if added later.",
+      "status": "draft"
+    },
+    "icons/social": {
+      "purpose": "Reserved for platform-specific social icon exports.",
+      "status": "draft"
+    },
+    "previews/github": {
+      "purpose": "GitHub avatar and social preview assets.",
+      "status": "draft"
+    },
+    "previews/product": {
+      "purpose": "Product-adjacent preview assets.",
+      "status": "draft"
+    },
+    "previews/website": {
+      "purpose": "Website-specific preview assets.",
+      "status": "draft"
+    },
+    "samples_ui_ux": {
+      "purpose": "Reference-only UI sample set used to freeze the current Obsura visual system.",
+      "status": "approved"
+    }
+  },
+  "referenceDirectories": {
+    "samples_ui_ux": {
+      "publishAsBrandAssets": false,
+      "reuseOutsideRepository": false,
+      "derivedDocumentation": [
+        "../docs/brand-system-freeze.md",
+        "../docs/design-foundations.md",
+        "../docs/design-tokens.md",
+        "../docs/component-guidelines.md"
+      ]
+    }
+  },
+  "naming": {
+    "logoExamples": [
+      "obsura-logo-primary.svg",
+      "obsura-logo-dark.svg",
+      "obsura-logo-light.svg",
+      "obsura-mark.svg",
+      "obsura-mark-dark.svg",
+      "obsura-mark-light.svg"
+    ],
+    "iconPattern": "obsura-icon-{size}.png"
+  },
+  "categories": {
+    "brandMarks": {
+      "status": "draft",
+      "description": "Primary logo and mark source assets for cross-repository use.",
+      "expectedAssets": [
+        {
+          "name": "obsura-logo-primary",
+          "formats": ["svg", "png"],
+          "themeCompatibility": ["dark", "light"],
+          "usageContexts": ["readme-header", "docs-masthead", "website-hero"],
+          "status": "draft"
+        },
+        {
+          "name": "obsura-logo-dark",
+          "formats": ["svg", "png"],
+          "themeCompatibility": ["light"],
+          "usageContexts": ["light-background-branding"],
+          "status": "draft"
+        },
+        {
+          "name": "obsura-logo-light",
+          "formats": ["svg", "png"],
+          "themeCompatibility": ["dark"],
+          "usageContexts": ["dark-background-branding"],
+          "status": "draft"
+        },
+        {
+          "name": "obsura-mark",
+          "formats": ["svg", "png"],
+          "themeCompatibility": ["dark", "light"],
+          "usageContexts": ["avatar", "app-header", "compact-branding"],
+          "status": "draft"
+        },
+        {
+          "name": "obsura-mark-dark",
+          "formats": ["svg", "png"],
+          "themeCompatibility": ["light"],
+          "usageContexts": ["light-background-mark-usage"],
+          "status": "draft"
+        },
+        {
+          "name": "obsura-mark-light",
+          "formats": ["svg", "png"],
+          "themeCompatibility": ["dark"],
+          "usageContexts": ["dark-background-mark-usage"],
+          "status": "draft"
+        }
+      ]
+    },
+    "favicons": {
+      "status": "provisional",
+      "description": "Small runtime-friendly icon files for browser and platform surfaces."
+    },
+    "appIcons": {
+      "status": "provisional",
+      "description": "Square icon exports suitable for app shells and web app packaging."
+    },
+    "socialAvatars": {
+      "status": "draft",
+      "description": "Controlled-background avatar or social profile variants when needed."
+    },
+    "monochromeVariants": {
+      "status": "approved",
+      "description": "Single-color icon variants for runtime and documentation usage."
+    },
+    "darkLightVariants": {
+      "status": "draft",
+      "description": "Theme-specific logo and mark variants for controlled contrast."
+    }
+  },
+  "exportVariants": [
+    {
+      "name": "transparent-monochrome-black",
+      "description": "Transparent PNG export with black foreground for controlled light backgrounds.",
+      "themeCompatibility": ["light"],
+      "status": "approved"
+    },
+    {
+      "name": "dark-background-safe",
+      "description": "Reserved for future exports intended for dark UI surfaces.",
+      "themeCompatibility": ["dark"],
+      "status": "draft"
+    },
+    {
+      "name": "light-background-safe",
+      "description": "Reserved for future exports intended for light UI surfaces.",
+      "themeCompatibility": ["light"],
+      "status": "draft"
+    }
+  ],
+  "icons": [
+    {
+      "size": 16,
+      "path": "icons/monochrome/black/obsura-icon-16.png",
+      "category": "favicons",
+      "variant": "transparent-monochrome-black",
+      "status": "approved",
+      "themeCompatibility": ["light"],
+      "foreground": "black",
+      "background": "transparent",
+      "recommendedUses": ["favicon"],
+      "sizingReference": "16x16",
+      "sourceRelation": "Derived from founder-provided icon asset import.",
+      "originalImport": "transparent_background-with no padding/icons8-aperture-apple-sf-black-filled-16.png"
+    },
+    {
+      "size": 32,
+      "path": "icons/monochrome/black/obsura-icon-32.png",
+      "category": "favicons",
+      "variant": "transparent-monochrome-black",
+      "status": "approved",
+      "themeCompatibility": ["light"],
+      "foreground": "black",
+      "background": "transparent",
+      "recommendedUses": ["favicon", "small-ui"],
+      "sizingReference": "32x32",
+      "sourceRelation": "Derived from founder-provided icon asset import.",
+      "originalImport": "transparent_background-with no padding/icons8-aperture-apple-sf-black-filled-32.png"
+    },
+    {
+      "size": 57,
+      "path": "icons/monochrome/black/obsura-icon-57.png",
+      "category": "favicons",
+      "variant": "transparent-monochrome-black",
+      "status": "approved",
+      "themeCompatibility": ["light"],
+      "foreground": "black",
+      "background": "transparent",
+      "recommendedUses": ["apple-touch"],
+      "sizingReference": "57x57",
+      "sourceRelation": "Derived from founder-provided icon asset import.",
+      "originalImport": "transparent_background-with no padding/icons8-aperture-apple-sf-black-filled-57.png"
+    },
+    {
+      "size": 60,
+      "path": "icons/monochrome/black/obsura-icon-60.png",
+      "category": "favicons",
+      "variant": "transparent-monochrome-black",
+      "status": "approved",
+      "themeCompatibility": ["light"],
+      "foreground": "black",
+      "background": "transparent",
+      "recommendedUses": ["apple-touch"],
+      "sizingReference": "60x60",
+      "sourceRelation": "Derived from founder-provided icon asset import.",
+      "originalImport": "transparent_background-with no padding/icons8-aperture-apple-sf-black-filled-60.png"
+    },
+    {
+      "size": 70,
+      "path": "icons/monochrome/black/obsura-icon-70.png",
+      "category": "appIcons",
+      "variant": "transparent-monochrome-black",
+      "status": "approved",
+      "themeCompatibility": ["light"],
+      "foreground": "black",
+      "background": "transparent",
+      "recommendedUses": ["tile", "app-icon"],
+      "sizingReference": "70x70",
+      "sourceRelation": "Derived from founder-provided icon asset import.",
+      "originalImport": "transparent_background-with no padding/icons8-aperture-apple-sf-black-filled-70.png"
+    },
+    {
+      "size": 72,
+      "path": "icons/monochrome/black/obsura-icon-72.png",
+      "category": "favicons",
+      "variant": "transparent-monochrome-black",
+      "status": "approved",
+      "themeCompatibility": ["light"],
+      "foreground": "black",
+      "background": "transparent",
+      "recommendedUses": ["apple-touch"],
+      "sizingReference": "72x72",
+      "sourceRelation": "Derived from founder-provided icon asset import.",
+      "originalImport": "transparent_background-with no padding/icons8-aperture-apple-sf-black-filled-72.png"
+    },
+    {
+      "size": 76,
+      "path": "icons/monochrome/black/obsura-icon-76.png",
+      "category": "favicons",
+      "variant": "transparent-monochrome-black",
+      "status": "approved",
+      "themeCompatibility": ["light"],
+      "foreground": "black",
+      "background": "transparent",
+      "recommendedUses": ["apple-touch"],
+      "sizingReference": "76x76",
+      "sourceRelation": "Derived from founder-provided icon asset import.",
+      "originalImport": "transparent_background-with no padding/icons8-aperture-apple-sf-black-filled-76.png"
+    },
+    {
+      "size": 96,
+      "path": "icons/monochrome/black/obsura-icon-96.png",
+      "category": "appIcons",
+      "variant": "transparent-monochrome-black",
+      "status": "approved",
+      "themeCompatibility": ["light"],
+      "foreground": "black",
+      "background": "transparent",
+      "recommendedUses": ["app-icon", "web-app", "documentation"],
+      "sizingReference": "96x96",
+      "sourceRelation": "Derived from founder-provided icon asset import.",
+      "originalImport": "transparent_background-with no padding/icons8-aperture-apple-sf-black-filled-96.png"
+    }
+  ],
+  "documentationReferences": [
+    {
+      "path": "../docs/logo-usage.md",
+      "purpose": "Usage guidance for logos, marks, and icon exports.",
+      "status": "approved"
+    },
+    {
+      "path": "../docs/asset-organization.md",
+      "purpose": "Source-of-truth rules and downstream asset consumption guidance.",
+      "status": "approved"
+    },
+    {
+      "path": "../docs/design-foundations.md",
+      "purpose": "Design direction that informs future theme-compatible exports.",
+      "status": "approved"
+    },
+    {
+      "path": "../docs/brand-system-freeze.md",
+      "purpose": "Approved visual-system extraction from the reference sample set.",
+      "status": "approved"
+    }
+  ]
+}
